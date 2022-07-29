@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvue_project"]=self["webpackChunkvue_project"]||[]).push([[443],{1584:function(e,t,r){r.r(t),r.d(t,{default:function(){return l}});var n=r(3396);const u={class:"about"},a=(0,n._)("h1",{class:"text-6xl text-gray-800 bg-red-400"},"This is an about page",-1),s=[a];function c(e,t){return(0,n.wg)(),(0,n.iD)("div",u,s)}var o=r(89);const i={},f=(0,o.Z)(i,[["render",c]]);var l=f}}]);
+//# sourceMappingURL=about.ec2abc46.js.map
