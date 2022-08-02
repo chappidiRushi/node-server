@@ -2,6 +2,7 @@ require('./environments/config');
 var express = require('express');
 const path = require('path')
 const cors = require('cors');
+
 const { initMongoConnection } = require('./modals/mongo_connection');
 const bodyParser = require('body-parser');
 var app = express();
@@ -16,13 +17,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "dist/")));
 app.use(cors(
-  // {
-  // Access_Control_Allow_Origin: "*",
-  // origin: "*",
-  // "Content-Type": "application/javascript;charset=utf-8",
-  // method:['GET','POST','PATCH','DELETE','PUT'],
-  // allowedHeaders:'Content-Type, Authorization, Origin, X-Requested-With, Accept'
-  // }
+  {
+  Access_Control_Allow_Origin: "*",
+  origin: "*",
+  "Content-Type": "application/javascript;charset=utf-8",
+  method:['GET','POST','PATCH','DELETE','PUT'],
+  allowedHeaders:'Content-Type, Authorization, Origin, X-Requested-With, Accept'
+  }
 )); 
 
 // attaching all routes
